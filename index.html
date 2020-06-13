@@ -1,111 +1,284 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8" />
+
     <meta
+
       name="viewport"
+
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
     />
 
+
+
     <link
+
       rel="stylesheet"
+
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+
       crossorigin="anonymous"
+
     />
+
+
+
+    <script
+
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+
+      crossorigin="anonymous"
+
+    ></script>
+
+
 
     <title>Matrix Portal</title>
 
+
+
     <style>
+
       body {
+
         background-color: black;
+
         color: green;
+
         font-family: monospace;
+
         background-image: url("sysfail.jpg");
+
         background-size: cover;
+
       }
+
+
 
       .form-bg {
+
         background-color: black;
+
       }
+
+
+
+      #photo {
+
+        display: none;
+
+        position: absolute;
+
+      }
+
+      #anim {
+
+        width: 100px;
+
+        height: 100px;
+
+        border: 1px solid aqua;
+
+      }
+
+
+
+      img {
+
+        width: 100%;
+
+        height: 100%;
+
+      }
+
     </style>
+
   </head>
+
   <body>
+
+    <img src="hacked2.jpg" alt="" id="photo" />
+
+
+
     <div class="container form-bg mt-2 border border-success">
+
       <div class="row">
+
         <div class="col-sm"></div>
+
         <div class="col-sm-6 text-center">
+
           <h1 class="display-5">Welcome To The Matrix Portal</h1>
+
           <p class="lead">Are you ready to be unplugged?</p>
+
         </div>
+
         <div class="col-sm"></div>
+
       </div>
+
+
 
       <!--second row-->
+
       <div class="row">
+
         <div class="col-sm-3"></div>
+
         <div class="col-sm">
+
           <form>
+
             <div class="form-group">
+
               <label for="exampleInputEmail1">Email address</label>
+
               <input
+
                 type="email"
+
                 class="form-control form-bg"
+
                 placeholder="email"
+
                 id="exampleInputEmail1"
+
                 aria-describedby="emailHelp"
+
                 required
+
               />
+
               <small id="emailHelp" class="form-text text-muted"
+
                 >We'll never share your email with anyone else.</small
+
               >
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input
-                type="password"
-                class="form-control form-bg"
-                placeholder="password"
-                id="exampleInputPassword1"
-                required
-              />
+
             </div>
 
-            <button type="submit" class="btn btn-outline-success btn-block">
+            <div class="form-group">
+
+              <label for="exampleInputPassword1">Password</label>
+
+              <input
+
+                type="password"
+
+                class="form-control form-bg"
+
+                placeholder="password"
+
+                id="exampleInputPassword1"
+
+                required
+
+              />
+
+            </div>
+
+
+
+            <button
+
+              id="newphoto"
+
+              type="submit"
+
+              class="btn btn-outline-success btn-block"
+
+            >
+
               Enter
+
             </button>
+
           </form>
+
           <br />
+
         </div>
+
         <div class="col-sm-3"></div>
+
       </div>
+
       <!--End of seond row-->
+
+
 
       <!--Beginning of third row-->
 
+
+
       <div class="row form-bg text-center">
+
         <div class="col-sm"></div>
+
         <div class="col-sm-8"></div>
+
         <div class="col-sm"></div>
+
       </div>
 
+
+
       <!--End of third row-->
+
     </div>
 
+
+
+    <script>
+
+      $(document).ready(function () {
+
+        $("button").click(function () {
+
+          $(".container").hide();
+
+          $("#photo").show();
+
+        });
+
+      });
+
+    </script>
+
+
+
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
+
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+
       crossorigin="anonymous"
+
     ></script>
+
     <script
+
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+
       crossorigin="anonymous"
+
     ></script>
+
   </body>
+
 </html>
+
